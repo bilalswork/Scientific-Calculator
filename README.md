@@ -29,4 +29,4 @@ This calculator is inspired by the sleek design and minimalistic layout of the i
 
 ## 📝 License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](LICENSE.txt).
