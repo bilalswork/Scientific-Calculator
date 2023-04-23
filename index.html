@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Scientific Calculator</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" id="result" readonly>
+    <div class="buttons">
+        <!-- Row One -->
+      <button onclick="clearResult()" class="mainOpr">AC</button>
+      <button onclick="deleteLastChar()" class="mainOpr">&larr;</button>
+      <button onclick="appendChar('(')" class="mainOpr">(</button>
+      <button onclick="appendChar(')')" class="mainOpr">)</button>
+      <!-- Row Two -->
+      <button onclick="appendChar('7')">7</button>
+      <button onclick="appendChar('8')">8</button>
+      <button onclick="appendChar('9')">9</button>
+      <button onclick="appendChar('/')" class="funcOpr">÷</button>
+      <!-- Row Three -->
+      <button onclick="appendChar('4')">4</button>
+      <button onclick="appendChar('5')">5</button>
+      <button onclick="appendChar('6')">6</button>
+      <button onclick="appendChar('*')" class="funcOpr">x</button>
+      <!-- Row Four -->
+      <button onclick="appendChar('1')">1</button>
+      <button onclick="appendChar('2')">2</button>
+      <button onclick="appendChar('3')">3</button>
+      <button onclick="appendChar('-')" class="funcOpr">-</button>
+      <!-- Row Five -->
+      <button onclick="appendChar('0')">0</button>
+      <button onclick="appendChar('.')">.</button>
+      <button onclick="appendChar('Math.sqrt(')">√</button>
+      <button onclick="appendChar('+')" class="funcOpr">+</button>
+      <!-- Row Six -->
+      <button onclick="appendChar('Math.pow(')">xʸ</button>
+      <button onclick="appendChar('Math.exp(')">eˣ</button>
+      <button onclick="appendChar('Math.abs(')">|x|</button>
+      
+      
+      <button onclick="calculateResult()" class="funcOpr">=</button>
+      <!-- Row Seven -->
+      <button onclick="appendChar('Math.sin(')">sin</button>
+      <button onclick="appendChar('Math.cos(')">cos</button>
+      <button onclick="appendChar('Math.tan(')">tan</button>
+      <button onclick="appendChar('Math.log10(')">log</button>
+    </div>
+  </div>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
